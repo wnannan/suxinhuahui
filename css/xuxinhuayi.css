@@ -1,0 +1,153 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(255,255,255);
+}
+.t-t {
+	width: 100%;
+	height: 80px;
+	background-color: rgba(255,255,255,1);
+	border-bottom: 1px solid rgb(200,200,200);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+.logo {
+	width: 1200px;
+	height: 80px;
+	margin: 0 auto;
+}
+.logo img {
+	float: left;
+	width: 150px;
+	height: 50px;
+	margin: 15px;
+}
+.t-t .logo ul {	
+	list-style: none;
+	float: right;
+}
+.logo li {
+	display: inline-block;
+}
+.logo li a {	
+	margin-left: 30px;
+	color: #000;
+	line-height: 60px;
+	text-decoration: none;
+}
+.logo .l-a {
+	color: #16b0dc;
+}
+.logo li a:hover {
+	color: #16b0dc;
+}
+.main {
+	margin: 0 auto;
+	padding-top: 80px;
+	text-align: center;
+	width: 100%;
+	height: 1100px;
+	border-bottom: 1px solid rgb(200,200,200);
+}
+.main .m-l {
+	list-style: none;
+	width:50%;
+	height: 539px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	transition: 0.3s;
+}
+.m-l .img{
+	transition: 0.3s;
+}
+.m-l img {
+	width: 100%;
+	height: 539px;
+	transition: 0.3s;
+}
+.m-l .kong {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	transition: 0.3s;
+}
+.m-l .m-m {
+	display: inline-block;
+	width: 130px;
+	height: 190px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: #fff;
+	transition: 0.3s;
+}
+.m-m time {
+	color: rgba(255,255,255,0.6);
+}
+.m-m h2 {
+	color: rgba(255,255,255,0.7);
+	font-weight: normal;
+}
+.m-m a {
+	margin: auto;
+	border: 1px solid rgba(255,255,255,0.7);
+	border-radius: 3px;
+	display: block;
+	width: 70px;
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none;
+	color: rgba(255,255,255,0.7);
+}
+.m-m a:hover {
+	color: rgba(200,200,200,1);
+	background-color: #fff;
+	transition-duration: 0.3s;
+}
+.m-l:hover .img {
+	transform: scale(1.1);
+	
+}
+.m-l:hover .kong {
+	background-color: rgba(0,0,0,0.7);
+}
+.m-l:hover h2 {
+	color: rgba(255,255,255,1);
+}
+
+.footer {
+	margin-top: 20px;
+	padding-top: 20px;
+	width: 100%;
+	height: 150px;
+	background-color: rgb(245,245,245);
+	text-align: center;	
+}
+.footer a {
+	color: #62a8ea;
+	text-decoration: none;
+}
+.footer>p {
+	text-align: center;
+	line-height: 10px;
+	color: rgb(150,150,150);
+	line-height: 10px;
+}
+.footer p a .icon-weixin {
+	font-size: 40px;
+	color: rgb(131,185,68);	
+}
+.footer p a .icon-qq,.footer p a .icon-youxiang {
+	font-size: 40px;
+	margin-left: 20px;
+}

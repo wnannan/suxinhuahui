@@ -1,0 +1,192 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(242,242,242);
+}
+.t-t {
+	width: 100%;
+	height: 80px;
+	background-color: rgba(255,255,255,1);
+	border-bottom: 1px solid rgb(200,200,200);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+.logo {
+	width: 1200px;
+	height: 80px;
+	margin: 0 auto;
+}
+.logo img {
+	float: left;
+	width: 150px;
+	height: 50px;
+	margin: 15px;
+}
+.t-t .logo ul {	
+	list-style: none;
+	float: right;
+}
+.logo li {
+	display: inline-block;
+}
+.logo li a {	
+	margin-left: 30px;
+	color: #000;
+	line-height: 60px;
+	text-decoration: none;
+}
+.logo .l-a {
+	color: #16b0dc;
+}
+.logo li a:hover {
+	color: #16b0dc;
+}
+.main {
+	margin: 0 auto;
+	padding-top: 100px;
+	text-align: center;
+	width: 1200px;
+	/*height: 1050px;*/
+}
+h1 {
+	color: #F67A82;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+.main .m-l {
+	display: inline-block;
+	float: left;
+	width: 700px;
+	background-color: #fff;
+	padding: 30px;
+	text-align: left;	
+	margin-bottom: 40px;
+}
+.m-l .liuyan {
+	padding: 10px;
+	width: 700px;
+	height: 60px;
+	line-height: 0;
+	border-bottom: 1px solid rgb(200,200,200);
+}
+.m-l .liuyan:hover {
+	background: #999;
+}
+.liuyan h4 {
+	font-weight: normal;
+	color: #37474f;
+}
+.liuyan small {
+	float: right;
+	color: #a3afb7;
+	font-size: 75%;
+}
+.liuyan p {
+	line-height: 20px;
+	font-size: 14px;
+	color: #76838f;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.m-l>a {
+	display: block;
+	width: 100%;
+	height: 40px;
+	background-color: #e4eaec;
+	line-height:40px;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	color: #76838f;
+	margin: 20px auto;
+}
+
+
+.main .m-r {
+	text-align: left;
+	display: inline-block;
+	width: 350px;
+	height: 390px;
+	background-color: #fff;
+	float: right;
+	padding: 30px;
+}
+.m-r input {
+	width: 330px;
+	height: 30px;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 5px;
+	padding-left: 15px;
+	outline: none;
+	margin-bottom: 20px;
+}
+.m-r textarea {
+	margin-bottom: 20px;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 14px;
+	resize: none;
+	outline: none;
+}
+.m-r button {
+	width: 100%;
+	height: 36px;
+	background-color: #62a8ea;
+	color: #fff;
+	border: 0;
+}
+dl {
+	width: 240px;
+	height: 215px;
+	margin: 20px auto;
+	border-top: 1px solid rgb(200,200,200);
+	border-bottom: 1px solid rgb(200,200,200);
+}
+h3 {
+	font-weight: normal;
+}
+dd {
+	line-height: 40px;
+	margin-left: 0px;
+	padding-left: 20px;
+	border: 1px solid rgb(200,200,200);
+	color: rgb(100,100,100);
+}
+dl>dd:nth-child(2),dl>dd:nth-child(3) {
+	border-bottom: 0;
+}
+
+.footer:before {
+	content: '';
+	clear: both;
+	display: block;
+}
+.footer {
+	width: 100%;
+	height: 150px;
+	background-color: rgb(245,245,245);
+	text-align: center;	
+}
+.footer a {
+	color: #62a8ea;
+	text-decoration: none;
+}
+.footer>p {
+	text-align: center;
+	line-height: 10px;
+	color: rgb(150,150,150);
+	line-height: 10px;
+}
+.footer p a .icon-weixin {
+	font-size: 40px;
+	color: rgb(131,185,68);	
+}
+.footer p a .icon-qq,.footer p a .icon-youxiang {
+	font-size: 40px;
+	margin-left: 20px;
+}

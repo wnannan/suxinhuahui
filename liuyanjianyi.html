@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>留言建议</title>
+	<link rel="stylesheet" type="text/css" href="./css/liuyanjianyi.css">
+	<link rel="stylesheet" type="text/css" href="icon/iconfont.css">
+</head>
+<body>
+	<div class="t-t">
+			<div class="logo">
+				<img src="./img/logo.png">
+				<ul>
+					<li><a href="./index.html">网站首页</a></li>
+					<li><a href="./huayanhuayu.html">花言花语</a></li>
+					<li><a href="./dongtai.html">素馨动态</a></li>
+					<li><a href="#">淘宝商城</a></li>
+					<li><a href="./suxinhuayi.html">素馨花艺</a></li>
+					<li><a href="#" class="l-a">留言建议</a></li>
+					<li><a href="./guanyu.html">关于素馨</a></li>			
+				</ul>
+			</div>
+	</div>
+	<div class="main">
+		<h1>留言建议</h1>
+		<div class="m-l">
+			<div class="liuyan">
+				<h4>张三<small></small></h4>
+				<p>更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢更新有些慢</p>
+			</div>
+			<div class="liuyan">
+				<h4>张三<small></small></h4>
+				<p>更新有些慢</p>
+			</div>
+			<div class="liuyan">
+				<h4>张三<small></small></h4>
+				<p>更新有些慢</p>
+			</div>
+			<div class="liuyan">
+				<h4>张三<small></small></h4>
+				<p>更新有些慢</p>
+			</div>
+			<div class="liuyan">
+				<h4>张三<small></small></h4>
+				<p>更新有些慢</p>
+			</div>
+			<div class="liuyan">
+				<h4>张三<small></small></h4>
+				<p>更新有些慢</p>
+			</div>
+			<div class="liuyan">
+				<h4>张三<small></small></h4>
+				<p>更新有些慢</p>
+			</div>			
+			<div class="liuyan">
+				<h4>张三<small></small></h4>
+				<p>更新有些慢</p>
+			</div>
+			<a href="javascript:void(false);">加载更多</a>
+				
+		</div>
+		<div class="m-r">			
+				<input type="text" placeholder="姓名"><!-- 搜索框 -->		
+				<input type="text" placeholder="联系电话">
+				<textarea placeholder="您的建议" rows="7" cols="43"></textarea>
+				<input type="text" placeholder="验证码">
+				<button>提交</button>
+		</div>
+	</div>
+	<div class="footer clearfix">
+		<p>
+		<a href="#"><i class="iconfont icon-weixin"></i></a>
+		<a href="#"><i class="iconfont icon-qq"></i></a>
+		<a href="#"><i class="iconfont icon-youxiang"></i></a>
+		</p>
+		<a href="#">豫ICP备17021305号</a>
+		<a href="#"><img src="./img/gonganbeian.png">豫公网安备 41012202000160号</a>
+		<p>联系电话 0371-62180519 15890062947 </p>
+		<p>郑州素馨花卉有限公司 版权所有 &copy; 2017-2021</p>
+	</div>
+</body>
+</html>
+<script>
+	let ml = document.querySelector(".m-l");
+	let name = document.querySelector(".m-r input");
+	let te = document.querySelector(".m-r textarea");
+	let btn = document.querySelector("button");
+	let sma = document.querySelectorAll("h4 small");
+	// console.log(date);
+	btn.onclick = function(){
+		let name1 = name.value;
+		let text = te.value;
+		let str = `<div class="liuyan">
+				<h4>${name1}<small></small></h4>
+				<p>${text}</p>
+			</div>`
+		ml.innerHTML+=str;
+		text.value="";
+		te.value = "";
+	}
+	let date = new Date();
+	for(let i=0;i<sma.length;i++){
+		sma[i].innerHTML = date.getFullYear() + "-" + date.getMonth() + "-" + date.getDay() + "&nbsp;" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+	}
+</script>
